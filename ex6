@@ -13,7 +13,7 @@ def rebus_poisk() -> None:
         for o in range(0, 10):
             for d in range(0, 10):
                 if len({x, o, d}) == 3:
-                    hod = int(str(x) + str(o) + str(d))
+                    hod = 100 * x + 10 * o + d
                     mat = 3 * hod
                     mat_str = str(mat)
                     if (100 <= mat <= 999) and len({x, o, d, int(mat_str[0]), int(mat_str[1]), int(mat_str[2])}) == 6:
